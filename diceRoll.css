@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body{
+    background-color: rgb(70, 144, 171);
+  }
+.main-section{
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  position: relative;
+}
+.backgorund{
+  background-color: green;
+}
+/* player one */
+  .player-one-section{
+    display: flex;
+    flex-direction: column;
+    line-height: 3em;
+    background-color: rgb(47, 106, 118);
+    width: 15rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .player-one-section p{
+    font-size: 2em;
+  }
+  .player-one-section div {
+    background-color: teal;
+    width: 8rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.35rem;
+    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+  }
+  /* newGame-rolls-hold */
+  .newGame-rolls-hold{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    height: 100%;
+  }
+  .newGame-rolls-hold img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .newGame-rolls-hold button {
+    padding: 0.178rem;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    opacity: 90%;
+  }
+  /* visbility */
+  .hidden{
+    display: none;
+  }
+/* player two */
+.player-two-section{
+  display: flex;
+  flex-direction: column;
+  line-height: 3em;
+  background-color: rgb(47, 106, 118);
+  width: 15rem;
+  height: 30rem;
+  justify-content: center;
+  align-items: center;
+}
+.player-two-section p{
+  font-size: 2em;
+}
+.player-two-section div {
+  background-color: teal;
+  width: 8rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.35rem;
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}

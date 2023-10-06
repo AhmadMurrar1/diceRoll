@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script defer src="diceRoll.js"></script>
+  <link rel="stylesheet" href="diceRoll.css">
+</head>
+<body>
+  <form class="form-submit" action="">
+    <h3>Type here the score</h3>
+  <input type="number" id="target-score" value="">
+</form>
+  <section class="main-section">
+    <section class="player-one-section">
+    <p>Player 1</p>
+    <p class="player-one-score">0</p>
+    <div class="current-score-player-one">
+      <h5>current</h5>
+      <h4 id="player-one-score-div" class="player-one-score-div">0</h4>
+    </div>
+    </section>
+    <section class="newGame-rolls-hold">
+      <button class="new-game">NEW GAME</button>
+      <img class="dice" src="dice-1.png" alt="dice-1">
+      <img class="dice" id="dice-two"  src="dice-2.png" alt="dice-2">
+      <button class="roll-dice">ROLL DICE</button>
+      <button class="hold">HOLD</button>
+    </section>
+    <section class="player-two-section">
+      <p>Player 2</p>
+      <p class="player-two-score">0</p>
+      <div class="current-score-player-two">
+        <h5>current</h5>
+        <h4 class="player-two-score-div">0</h4>
+      </div>
+    </section>
+    
+  </section>
+</body>
+</html>
