@@ -40,8 +40,8 @@ rollDice.addEventListener('click', function () {
   const randomNumber1 = Math.floor(Math.random() * 6) + 1;
   console.log(randomNumber);
   console.log(randomNumber1);
-  dice.src = `dice-${randomNumber}.png`;
-  dice2.src = `dice-${randomNumber1}.png`;
+  dice.src = `assets/images/dice-${randomNumber}.png`;
+  dice2.src = `assets/images/dice-${randomNumber1}.png`;
   
   if (activePlayer === 1) {
     if (randomNumber !== 1) {
@@ -82,12 +82,12 @@ hold.addEventListener('click', function(){
   if (activePlayer === 1) {
     activePlayer = 2;
     playerOneScore.textContent = playerOneScoreDivValue;
-    playerOneScoreDiv.textContent = '0';
+    playerOneScoreDiv.innerHTML = '0';
   }
   else if(activePlayer === 2) {
     activePlayer = 1;
     playerTwoScore.textContent = playerTwoScoreDivValue;
-    playerTwoScoreDiv.textContent = '0';
+    playerTwoScoreDiv.innerHTML = '0';
   }
 });
 
