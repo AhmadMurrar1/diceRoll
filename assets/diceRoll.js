@@ -44,7 +44,7 @@ rollDice.addEventListener('click', function () {
   dice2.src = `assets/images/dice-${randomNumber1}.png`;
   
   if (activePlayer === 1) {
-    if (randomNumber !== 1) {
+    if (randomNumber && randomNumber1) {
       playerOneScoreDivValue += randomNumber + randomNumber1;
       playerOneScoreDiv.textContent = playerOneScoreDivValue;
       if(playerOneScoreDivValue >= targetScore){
@@ -60,7 +60,7 @@ rollDice.addEventListener('click', function () {
       activePlayer = 2; 
     }
   } else if (activePlayer === 2) {
-    if (randomNumber !== 1) {
+    if (randomNumber && randomNumber1) {
       playerTwoScoreDivValue += randomNumber + randomNumber1;
       playerTwoScoreDiv.textContent = playerTwoScoreDivValue;
       if(playerTwoScoreDivValue >= targetScore){
